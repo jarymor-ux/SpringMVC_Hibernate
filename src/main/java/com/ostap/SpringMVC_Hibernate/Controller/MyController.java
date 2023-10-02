@@ -26,7 +26,7 @@ public class MyController {
     @RequestMapping("/addNewEmployee")
     public String addNewEmployee(Model model){
         Employee employee = new Employee();
-        model.addAttribute("newEmp", employee);
+        model.addAttribute("employee", employee);
 
         return "employee-info";
     }
