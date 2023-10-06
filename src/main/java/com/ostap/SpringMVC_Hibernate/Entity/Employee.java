@@ -3,6 +3,8 @@ package com.ostap.SpringMVC_Hibernate.Entity;
 
 
 import javax.persistence.*;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 
 @Entity
 @Table(name = "employees")
@@ -17,6 +19,8 @@ public class Employee {
     private String surname;
     @Column(name = "department")
     private String department;
+    @Min(value = 200)
+    @Max(value = 7000)
     @Column(name = "salary")
     private int salary;
 
