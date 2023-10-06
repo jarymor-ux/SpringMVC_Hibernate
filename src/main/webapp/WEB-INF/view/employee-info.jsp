@@ -16,7 +16,6 @@
     Department <form:input path="department"/>
     <br><br>
     Salary <form:input path="salary"/>
-    <form:errors path="salary"/>
     <br><br>
     <input type="submit" value="OK"/>
 
